@@ -4,3 +4,6 @@
   <%# <%= render partial: 'messages/message', collection: @messages と同値 メッセージ毎にmessages/_message.html.erbを適用 %> 
   <%# renderメソッド。呼び出すテンプレートファイルを指定。 render ファイル名（アクション名） %>
 </div>
+
+<%= label_tag :content, 'Say something' %>
+<%= text_field_tag :content, nil, data: { behavior: 'room_speaker' } %>

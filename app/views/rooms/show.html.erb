@@ -1,2 +1,6 @@
-<h1>Rooms#show</h1>
-<p>Find me in app/views/rooms/show.html.erb</p>
+<h1>Chat Room</h1>
+<div id="message">
+  <%= render @messages %>
+  <%# <%= render partial: 'messages/message', collection: @messages と同値 メッセージ毎にmessages/_message.html.erbを適用 %> 
+  <%# renderメソッド。呼び出すテンプレートファイルを指定。 render ファイル名（アクション名） %>
+</div>

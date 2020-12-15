@@ -4,6 +4,6 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
   root to: 'rooms#index'
-  resources :users, only: [:new]
+  resources :users, only: [:new, :index]
   resources :rooms, only: %i[show]
 end

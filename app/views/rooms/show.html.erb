@@ -1,5 +1,6 @@
 <h1>Chat Room</h1>
-<div id="message">
+<%# data-room.idを使うことで、js側で部屋を見分ける %>
+<div id="message" data-room_id="<%= @room.id %>">
   <%= render @messages %>
   <%# <%= render partial: 'messages/message', collection: @messages と同値 メッセージ毎にmessages/_message.html.erbを適用 %> 
   <%# renderメソッド。呼び出すテンプレートファイルを指定。 render ファイル名（アクション名） %>

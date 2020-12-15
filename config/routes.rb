@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     omniauth_callbacks: 'users/omniauth_callbacks',
     registrations: 'users/registrations'
   }
-  root to: 'users#index'
+  root to: 'rooms#index'
   resources :users, only: [:new]
-  resources :rooms, only: [:index, :show]
+  resources :rooms, only: %i[show]
 end

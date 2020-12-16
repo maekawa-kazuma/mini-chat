@@ -1,3 +1,14 @@
+GIT
+  remote: git://github.com/elastic/elasticsearch-rails.git
+  revision: 606f3482e298fab0afc5a083468f23ec7464b0d3
+  branch: 6.x
+  specs:
+    elasticsearch-model (6.1.0)
+      activesupport (> 3)
+      elasticsearch (~> 6)
+      hashie
+    elasticsearch-rails (6.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -82,6 +93,14 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    elasticsearch (6.8.2)
+      elasticsearch-api (= 6.8.2)
+      elasticsearch-transport (= 6.8.2)
+    elasticsearch-api (6.8.2)
+      multi_json
+    elasticsearch-transport (6.8.2)
+      faraday (~> 1)
+      multi_json
     erubi (1.10.0)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
@@ -269,6 +288,8 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   devise
+  elasticsearch-model!
+  elasticsearch-rails!
   html2slim
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)

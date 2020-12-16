@@ -31,6 +31,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-byebug'
+  gem 'pry-doc'
 end
 
 group :development do
@@ -59,3 +61,5 @@ gem 'omniauth-rails_csrf_protection'
 gem 'pry-rails'
 gem 'slim-rails'
 gem 'html2slim'
+gem 'elasticsearch-rails', git: 'git://github.com/elastic/elasticsearch-rails.git', branch: '6.x'
+gem 'elasticsearch-model', git: 'git://github.com/elastic/elasticsearch-rails.git', branch: '6.x'

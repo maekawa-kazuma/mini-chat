@@ -1,8 +1,11 @@
 h1 Chat Room
-div#message data-room_id="#{@room.id}"
-  = render @messages
-= label_tag :content, 'Say something'
-= text_field_tag :content, nil, data: { behavior: 'room_speaker' }
+div.container
+  div#message.row data-room_id="#{@room.id}"
+    button.btn.btn-primary.col-lg-12 戻る
+    =  render @messages
+div
+  = label_tag :content, 'Say something'
+  = text_field_tag :content, nil, data: { behavior: 'room_speaker' }
 
 
 /<h1>Chat Room</h1>
